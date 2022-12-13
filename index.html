@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+ 
+
+    <script>
+         function rave(){
+        r= Math.floor(Math.random()*255)
+        g= Math.floor(Math.random()*255)
+        b= Math.floor(Math.random()*255)
+        document.body.style.background
+        }
+
+        "use strict"; //siempre en el top, si no funciona poner dentro de una (function(){})
+        console.log("Hola");//para ver en consola dentro de pagina web
+        let message='Hello', user='Jonh';//almacena Hello en variable message y jonh en user; no recomendado
+        var message2='Hola';//old let
+        var JonhBirth= '15.02.1995';//constante
+        const COLOR_ORANGE = "#FF7F00";
+        const edad= someCode(JonhBirth);
+        alert(user ?? 'No se quien eres');//Verdad si hay usuario, si no imprime mensaje
+        let mayorEdad= (edad>18)?true:false;
+        let pasa;
+        if(mayorEdad==true){
+               pasa='SI pasa'
+        }else{(pasa='NO pasa')}
+        typeof mayorEdad;//devuelve el tipo de variable
+        alert('Nombre: ' +user + ' edad: '+ edad+ " //  mayor edad: "+pasa + " //  "+typeof mayorEdad/*devuelve el tipo de variable*/);//muestra el contenido
+        let user2= "Jaume";
+        let int=1;
+        let int2=2;
+        let text=" es dios"
+        let phrase= `Es sabido que ${user2+" "+text}`;
+        let phrase2= "Es sabido que " + user2 + " " + text;
+        alert(int+ " y " + int2);
+        alert(`comprobar, ${int + int2}`);
+        alert(phrase);
+        alert(phrase2);
+        function someCode(fecha){
+            var day = fecha.substr(0,1);
+            var month = fecha.substr(3,4);
+            var year =fecha.substr(6,9);
+            var today = new Date();
+            var age = today.getFullYear() -year;
+                if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
+                    age--;
+                }
+            return age;
+        }
+        let company;
+        do{
+          company = prompt( 'Mejor empresa del mundo','');
+         (company=='capgemini') ? alert('SI'):alert('NO');
+        }while
+         (company!='capgemini');
+
+    </script>
+</html>
